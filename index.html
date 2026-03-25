@@ -2,29 +2,39 @@
 <html>
 <head>
 <style>
+  /* Heading 1: 頂部黑線 + 紅色文字陰影 */
   h1 {
-    border-top: 3px solid black; 
-    padding-top: 10px;           
-    display: inline-block;       
-    width: 100%;                 
+    border-top: 4px solid black;    /* 頂部的粗黑線 */
+    padding-top: 10px;
+    color: black;
+    /* text-shadow 語法：水平偏移 垂直偏移 模糊半徑 顏色 */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); 
+    display: inline-block;
   }
 
+  /* Heading 2: 黑框線 + 黃色發光陰影 (外光暈) */
   h2 {
-    border: 2px solid yellow;   
-    font-style: italic;          
-    padding: 5px;
+    border: 1px solid black;        /* 黑色細邊框 */
+    font-style: italic;
+    padding: 10px;
+    background-color: white;
+    /* box-shadow 語法：水平 垂直 模糊 擴散 顏色 */
+    box-shadow: 0 0 15px 5px yellow; 
+    margin: 20px 0;
   }
 
-
+  /* Heading 3: 靠右 + 底線 */
   h3 {
-    text-align: right;           
-    text-decoration: underline;  
+    text-align: right;
+    text-decoration: underline;
+    font-family: "Times New Roman", Times, serif;
   }
 </style>
 </head>
 <body>
 
   <h1>This is heading 1</h1>
+  <br>
   <h2>This is heading 2</h2>
   <h3>This is heading 3</h3>
 
