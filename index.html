@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Heading Style</title>
+<title>Heading Layout</title>
 
 <style>
 body {
@@ -14,32 +14,27 @@ body {
 .h1 {
   font-size: 48px;
   font-weight: bold;
+  border-top: 6px solid black;
   display: inline-block;
   padding-top: 10px;
 
-  /* 上方黑線 */
-  border-top: 6px solid black;
-
-  /* 黑線的紅色陰影 */
-  box-shadow: 0 -4px 0 red;
-
-  /* 文字紅色陰影 */
+  /* 🔴 紅色陰影（文字 + 上方線） */
   text-shadow: 2px 2px red;
+  box-shadow: 0 -6px 0 red; /* 線的紅色陰影 */
 }
 
 /* Heading 2 */
 .h2 {
   font-size: 36px;
   font-style: italic;
+  border: 3px solid black;
   padding: 10px;
   background: white;
-
-  border: 3px solid black;
-
-  /* 黃色外發光（陰影） */
-  box-shadow: 0 0 0 6px yellow;
-  
+  outline: 6px solid yellow;
   margin: 40px 0;
+
+  /* 🟡 黃色陰影 */
+  box-shadow: 6px 6px 0 yellow;
 }
 
 /* Heading 3 */
